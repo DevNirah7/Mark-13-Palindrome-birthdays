@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*
+{
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+:root {
+    --primary-color: #F0A500;
+    --secondary-color:#334756;
+    --tertiary-color: #082032;
+    --light-color: #F1F0FF;
+}
+
+h1
+{
+    font-size: 4rem;
+}
+
+h2
+{
+    font-size: 2rem;
+
+}
+
+h3
+{
+    font-size: 1.4rem;
+
+}
+
+.container {
+    max-width: 100vh;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+    border-radius: 0.7rem;
+    color: var(--secondary-color);
+}
+
+#title
+{
+    font-family: 'Lobster', cursive;
+    margin: 2rem auto;
+    text-align: center;
+    color:white;
+    font-weight: lighter;
+}
+
+#desc
+{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#lfo
+{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+label
+{
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--light-color);
+
+}
+
+input
+{
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    color: var(--tertiary-color);
+}
+
+button
+{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 0px solid var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color:var(--tertiary-color);
+    font-size: 1.2rem;
+    font-weight:900;
+
+}
+
+#result
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: var(--light-color);
+    margin: 1rem;
+    padding: 0.5rem
+}
+   
+#resultnext
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: grey;
+    margin: 1rem;
+    padding: 0.5rem
+}
+
+
+
+
