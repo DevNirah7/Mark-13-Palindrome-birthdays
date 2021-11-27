@@ -222,14 +222,12 @@ check.addEventListener("click", function check()
                 month: Number(listDates[1]),
                 year: Number(listDates[0]),
         }
-    if (bdayStr == "")
-        {
-        outputText.innerText = "YAAAY! Your Birthday is a Palindrome";
-        }   
+    
            
         var chkPal = checkPalindromes(birthDate);
         if (chkPal) 
         {
+            outputNext.style.visibility="hidden";
             outputText.innerText = "YAAAY! Your Birthday is a Palindrome!";
             
         } 
@@ -238,6 +236,7 @@ check.addEventListener("click", function check()
             var [daysPrev, previousDate] = getPrePalinDate(birthDate);
             var [daysRemaining, nextDate] = getNextPalinDate(birthDate);
             outputText.innerText = "UH-OH! Your Birthday is not a Palindrome!";
+            outputNext.style.visibility="visible";
             outputNext.innerText = `Previous palindrome date was ${previousDate.day}-${previousDate.month}-${previousDate.year}. You missed it by ${daysPrev} day/days.\n 
             Next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year} . It comes after the next ${daysRemaining} day/days. `;
            
